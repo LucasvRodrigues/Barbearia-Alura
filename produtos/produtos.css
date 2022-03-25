@@ -1,0 +1,41 @@
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /* com isso os 30% sao definitivos seram sempre a largura e os px estaram dentro dos 30% */
+    box-sizing: border-box;
+    /* Para criar uma borda entre o padding e a margin eu consigo fazer tudo por um comando de border colocando a dimensão a coloração e o estilo */
+    border: 2px #000000 solid ;
+    /* Para arredondar o canto da minha borda eu useio o border-radius: 10px; aonde os 10 px são o raio da minha circunferencia  */
+    border-radius: 10px;
+}
+.produtos li:hover {
+    border-color: #C78C19;
+}
+.produtos li:active {
+    border-color: #8b6a28;
+}
+.produtos li:hover h2 {
+    font-size: 30px;
+}
+.produtos h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+.produtos-descricao {
+    font-size: 18px
+}
+.produtos-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}

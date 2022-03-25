@@ -1,0 +1,83 @@
+body {
+    font-family:helvetica!important;
+}
+/* CABEÇALHO STYLE */
+/* Para auterar o background da pagina inteira chama o body aq e atribui o background */
+header {
+    background: #BBBBBB;
+    /* Espaçamento interno para deixar os itens da caixa mais centralizados */
+    padding: 20px 0 !important;
+
+}
+.caixa {
+/* Para a caixa levantar e causar influencia no conteudo q estava absoluto */
+    position: relative;
+/* Caixa usando o espaçamento externo para centralizar os elementos da lista e a margin auto para ela se moldar de acordo com a tela e nao perder a centralização */
+    width: 940px;
+    margin: 0 auto;
+}
+nav{
+    /* Uso do position: absolute; para colocar os itens da lista a direita do cabeçalho */
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li {
+/* Para deixar minha lista lado a lado utilizo o display inline e dando um espaçamento entre os elementos com o margin 0 para a direita 0 para cima 0 para a baixo e 15 para a direita */
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    /* Para deixar o texto em maiusculo utiliza-se o uppercase */
+    text-transform: uppercase;
+    color: #000000;
+    /* Para alterar o texto para negrito bold */
+    font-weight: bold;
+    font-size: 22px;
+    /* Para remover o sublinhado ou qualquer outra decoraçao utiliza-se o none = nenhum */
+    text-decoration: none;
+}
+nav a:hover {
+    /* Uso o "hover" para mapear quando o mouse estiver por cima do elemento no caso os link dentro do menu de nav mais especificamente os "a", estipulando uma cor para mostrar para o usuario */
+    color: #C78C19;
+    /* estilo sublinhado quando o mouse estiver por cima  */
+    text-decoration: underline;
+}
+header ul {
+    /* display pode ser inline como imagens e block q fica travado a linha inteira ou os dois ai da para estipular parametros */
+    display: inline-block;
+    vertical-align: top;
+}
+ /* CABEÇALHO STYLE */
+
+ /* FOOTER */
+ footer {
+    /* footer utilizado para fazer o roda pé, background com url para colocar uma foto de fundo e margem interna para alinhar com o logo */
+    text-align: center;
+    background: url("../img/bg.jpg");
+}
+.copy {
+    /* texto copyright cor margem e tamanha da fonte e foi utilizado um caracter universal da unicode para representar a simbolp do copyright */
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+    padding: 40px 0;
+}
+/* FOOTER */
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .principal, .mapa-local, .conteudo-beneficios, .video, .caixa {
+        width: auto;
+        }
+    h1  {
+        text-align: center;
+        }
+    nav {
+        position: static;
+        }
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+        }
+        }
+/* Mobile */

@@ -1,0 +1,109 @@
+/* Para auterar o background da pagina inteira chama o body aq e atribui o background */
+.banner {
+    width: 100%;
+}
+.titulo-home {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+.principal p {
+    margin: 0 0 1em;
+}
+.principal strong {
+    font-weight: bold;
+}
+.principal em {
+    font-style: italic;
+}
+/* Para usar um style em varios paragrafos etc... */
+/* Foi add um id de nome missao para identificar aquele paragrafo q iria receber uma mudança especifica  */
+/* #missao {
+    font-size: 3l0px;
+} */
+/* Para mudar a cor de um elemento q possui uma tag ja chama se a tag, porem neste caso existiam duas tags strong e so queria mudar a q estava dentro da tag em */
+em strong {
+    color: #C78C19;
+}
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+.mapa p {
+    text-align: center;
+    margin: 0 0 2em;
+}
+.mapa-local {
+    width: 940px;
+    margin: 0 auto;
+}
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+.conteudo-beneficios  {
+	width: 640px;
+	margin: 0 auto ;
+
+}
+.lista-beneficios  {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+.itens {
+    font-style: italic;
+    line-height: 1.5;
+}
+.itens::before {
+    content: "🟊";
+    font-weight: bold;
+    color: #8b6a28;
+}
+.itens:first-child {
+    font-weight: bold;
+}
+.imagem-beneficios {
+/* espaçamento externo */
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px #8b6a28;
+}
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+.video {
+   width: 560px;
+   margin: 2em auto;
+   box-shadow: 10px 10px 5px #8b6a28;
+}
+
+@media screen and (max-width: 480px) {
+.principal, .mapa-local, .conteudo-beneficios, .video, .caixa {
+    width: auto !important;
+    }
+h1  {
+    text-align: center;
+    }
+nav {
+    position: static !important;
+    }
+.lista-beneficios, .imagem-beneficios {
+    width: 100%;
+    }
+    }
+
